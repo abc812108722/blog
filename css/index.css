@@ -1,0 +1,435 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 350px;
+    background:url('../images/h.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.blogname {
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.blogname a {
+    color: aliceblue;
+    font-size: 25px;
+}
+.blogname a:hover {
+    color:bisque
+
+}
+.blognav {
+    margin-right: 50px;
+}
+.blognav ul li {
+    float: left;
+    margin-left: 50px;
+    color: aliceblue;
+    font-size: 25px;
+}
+.blognav ul li a {
+    color: aliceblue;
+}
+.blognav ul li a:hover {
+    color:bisque
+}
+.content {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    width: 1100px;
+    margin: 0 auto;
+}
+.article {
+    width: 700px;
+
+}
+.desc {
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.article-list {
+    margin-top: 20px;
+    min-height: 210px;
+    border-bottom: 1px solid lightgray;
+
+}
+.article-list .category {
+    display: flex;
+    justify-content: space-between;
+}
+.article-list .title {
+    font-size: 20px;
+}
+.category {
+    color: gray;
+}
+
+.b-right:hover {
+    cursor: pointer;
+    color:orange;
+
+}
+.b {
+    display: flex;
+    color: gray;
+    margin-top: 40px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.next {
+    float: right;
+    margin-top: 30px;
+    height: 40px;
+    width: 100px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rightnav {
+    margin-left: 50px;
+    margin-top:50px;
+    width: 300px;
+}
+.search {
+    margin-left: 100px;
+    width: 200px;
+}
+.search .search-title {
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+.search-box {
+    position: relative;
+}
+.search-button {
+    margin-top: 20px;
+    height: 30px;
+    width: 100%;
+    outline: none;
+    padding-left: 10px;
+    border:1px solid rgba(184,197,214,.2);
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 4%);
+}
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top:23px;
+}
+.search-icon :hover {
+    cursor: pointer;
+}
+.search-icon  img{
+    width: 25px;
+    height: 25px;
+}
+.about {
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 200px;
+
+}
+.about .about-title {
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+.about-content {
+    color: gray;
+    margin-top: 20px;
+    padding-left: 100px;
+}
+.total-article:hover{
+    color:lightcoral;
+    cursor: pointer;
+}
+.category-r {
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 300px;
+}
+.category-r .category-title {
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+.cat-con {
+    position: relative;
+    margin-top: 10px;
+}
+.cat-con div {
+    position: relative;
+    width: 100%;
+}
+.cat-list {
+    margin-right: 10px;
+    margin-top:10px;
+    color: gray;
+    max-width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid lightgray;
+    text-align: center;
+    padding: 1px 10px 1px 10px;
+    border-radius: 3px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+.c_num {
+    position: absolute;
+    left: 170px;
+    top:7px;
+    color: gray;
+}
+
+.cat-list:hover {
+    cursor: pointer;
+    border-color: orange;
+    color: orange;
+}
+.cd-title {
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+.cd{
+    position: relative;
+    margin-top: 255px;
+    margin-left: 100px;
+    width: 300px;
+}
+.cd ul li{
+   padding: 10px 0 10px 0;
+}
+.cd ul li a {
+    color: black;
+}
+.cd ul li a:hover {
+    cursor: pointer;
+    border-color: orange;
+    color: orange;
+}
+.more {
+    color: gray;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    margin-left: 110px;
+}
+.more:hover {
+    cursor: pointer;
+    background-color: lightblue;
+    color: antiquewhite ;
+}
+.lgin {
+    position: absolute;
+    left: calc(50% - 250px);
+    top:200px;
+    height: 300px;
+    width: 500px;
+    background-color: #fff;
+    z-index: 99;
+}
+.u {
+    position: relative;
+}
+.lgin input {
+    display: block;
+
+}
+.input-u {
+    position: absolute;
+    outline: none;
+    height: 40px;
+    width: 300px;
+    border: 1px solid #c8c8c8;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+#username {
+    top:50px;
+    left:78px;
+}
+#password {
+    top:120px;
+    left:78px;
+}
+#username_zc {
+    top:50px;
+    left:78px;
+}
+#password_zc {
+    top:120px;
+    left:78px;
+}
+u-btn {
+    position: relative;
+}
+.btn {
+    position: absolute;
+    top:197px;
+    left:131px;
+    width: 200px;
+    height: 50px;
+    border:none;
+    background-color: bisque;
+    border-radius: 5px;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.tip {
+    position: relative;
+}
+.tip span {
+    font-size: 12px;
+    color: gray;
+    position: absolute;
+    top:258px;
+    left: 181px;
+}
+.close {
+    position: relative;
+}
+.close span {
+    font-size: 20px;
+    position: absolute;
+    top:-7px;
+    right: 2px;
+    display: block;
+    color: lightgray;
+
+}
+.close span:hover {
+    cursor: pointer;
+}
+.closel {
+    position: relative;
+}
+.closel span {
+    font-size: 20px;
+    position: absolute;
+    top:-7px;
+    right: 2px;
+    display: block;
+    color: lightgray;
+
+}
+.closel span:hover {
+    cursor: pointer;
+}
+.shadow {
+    display: none;
+    top:0;
+    left:0;
+    position: absolute;
+    width: 100%;
+    height: 1920px;
+    z-index: 88;
+    background-color: #fff;
+    opacity: .6;
+}
+.si {
+    
+}
+
+.dl>span {
+    display: inline-block;
+    display: none;
+    font-size: 14px;
+    color: red;
+    position: absolute;
+    left:149px;
+    top:27px;
+}
+.si>span {
+    display: inline-block;
+    display: none;
+    font-size: 14px;
+    color: red;
+    position: absolute;
+    left:149px;
+    top:27px;
+}
+.logout {
+    position: absolute;
+    display: none;
+    top:43px;
+    right: 33px;
+    width: 60px;
+    border-radius: 3px;
+    height: 28px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 28px;
+    background-color: antiquewhite;
+    color: #ccc;
+}
+.title a h3{
+    display: inline-block;
+    color: black;
+}
+.title a h3:hover{
+    color: orange;
+}
+.b-right a {
+    color: black;
+}
+.b-right a:hover{
+    color: orange;
+}
+.pre {
+    display: none;
+    float: left;
+    margin-top: 30px;
+    height: 40px;
+    width: 100px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.scrollto_top {
+    cursor: pointer;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: orange;
+    right: 70px;
+    bottom:40px;
+}
+.arrow {
+
+    position: absolute;
+    top:14px;
+    left:6px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent; 
+    border-color: white;
+    border-style: solid;
+    border-width: 10px 10px 0 0;
+    transform: rotate(-45deg); 
+}
+.cd ul li a span {
+    color: gray;
+}
+
+
+footer {
+    height: 100px;
+    width: 100%;
+}

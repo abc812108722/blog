@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet", href="../css/common.css">
+    <link rel="stylesheet", href="../css/index.css">
+    <link rel="stylesheet", href="../css/article.css">
+    <script src="../js/axios.js"></script>
+    <script src="../js/article.js"></script>
+    <link rel="stylesheet", href="../css/hlight.css">
+    <script src="../js/hlight.js"></script>
+    <script src="../js/other.js"></script>
+ 
+
+    <title>文章</title>
+</head>
+<body>
+    <div class="header">
+        <div class="blogname">
+            <a href="/index.html">Honrique'Blog</a>
+        </div>
+        <div class="blognav">
+            <ul>
+                <li><a href="/index.html" class="index">首页</a></li>
+                <li><a href="" class="lyb">留言板</a></li>
+                <li><a href="javascript:;" class="btn-lgsin">登录/注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+
+        <div class="article-c">
+            <div class="article">
+            <h2 class="article-title"><%= data.name%></h2>
+            <div class="article-content">
+            </div>
+        </div>
+            <!-- <div class="commentbox">
+                <textarea rows="5" cols="70"></textarea><span>评论</span>
+            </div>
+            <div class="usercomment">
+                <div class="c"><span>评论顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶</span><span class="uname">李四</span><span class="rec">回复</span><span class="ctime">2021-9-10</span></div>
+            </div> -->
+        </div>
+        <!-- <div class="rightnav">
+            <div class="search">
+                <div class="search-title">搜索文章</div>
+                <div class="search-box"><input class="search-button" type="search" placeholder="输入关键字搜索">
+                    <span class="search-icon"><img src="../images/search.png"></span></div>
+            </div>
+            <div class="about">
+                <div class="about-title">关于博客</div>
+                <div class="about-content">
+                    <div class="about-content-t"><span class="total-article">88</span> 文章</div>
+                    <div class="about-content-t"><span class="total-view">7777</span> 浏览</div>
+                </div>
+            </div>
+            <div class="category-r">
+                <div class="category-title">分类</div>
+                <div class="cat-con">
+                </div>
+            </div>
+            <div class="cd">
+                <div class="cd-title">存档</div>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+
+            </div>
+        </div> -->
+    </div>
+    <div class="lgin dl" style="display: none;">
+        <div class="close"><span>x</span></div>
+        <span>用户名或密码不能为空!</span>
+        <span>用户名或密码错误!</span>
+        <div class="u">
+        <input type="text" id="username" class="input-u" placeholder="用户名" required="required">
+        <input type="password" id="password" class="input-u" placeholder="密码" required="required">
+        </div>
+        <div class="u-btn">
+        <input type="button" value="登录" class="btn">
+        </div>
+        <div class="tip"><span>没有账号？点击<a href="javascript:;">注册</a></span></div>
+    </div>
+    <div class="lgin si" style="display: none;">
+        <div class="closel"><span>x</span></div>
+        <span>用户名或密码不能为空!</span>
+        <span>用户名或密码错误!</span>
+        <span>用户已经存在,请更换用户名</span>
+        <div class="u">
+        <input type="text" id="username_zc" class="input-u" placeholder="用户名" required="required">
+        <input type="password" id="password_zc" class="input-u" placeholder="密码" required="required">
+        </div>
+        <div class="u-btn">
+        <input type="button" value="注册" class="btn">
+        </div>
+
+    </div>
+    <div class="shadow"></div>
+    <div class="scrollto_top" title="返回顶部"><div class="arrow"></div></div>
+    <footer>
+    </footer>
+    <script>
+        var stringToHTML = function (str) {
+	        var dom = document.createElement('div');
+            let f = document.querySelector('.article-content')
+	        dom.innerHTML = str;
+            f.appendChild(dom)
+ 
+    }
+    var a = `<%- data.content%>`
+    stringToHTML(a)
+    hljs.highlightAll()
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/axios.js"></script>
+    <script src="../js/admin.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style> 
+        #editor—wrapper {
+            border: 1px solid #ccc;
+            z-index: 100; /* 按需定义 */
+            
+        }
+        #toolbar-container { border-bottom: 1px solid #ccc; }
+    </style>
+    <script src="../js/wang.js"></script>
+
+
+    <title>后台</title>
+</head>
+<body>
+    <div class="content">
+        <div class="left-content">
+            <div class="tjwz">
+                <input type="button" id="btn1" value="添加文章">
+                <input type="button" id="btn2" value="修改文章" disabled="true">
+                <input type="button" id="btn3" value="删除文章" disabled="true">
+            </div>
+        
+            <div class="article_list">
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="title">
+                <input type="text" class="title_inp" placeholder="填写标题...">
+            </div>
+            <div class="title desc">
+                <input type="text" class="title_inp" placeholder="填写描述...">
+            </div>
+            <div class="title category">
+                <input type="text" class="title_inp" placeholder="填写分类...">
+            </div>
+            <div id="editor—wrapper">
+                <div id="toolbar-container"><!-- 工具栏 --></div>
+                <div id="editor-container"><!-- 编辑器 --></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

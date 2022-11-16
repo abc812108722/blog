@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .d{
+        border: 1px solid red;
+        margin: 0 auto;
+
+       }
+       img {
+        vertical-align: text-top;
+       }
+ 
+    </style>
+</head>
+<body>
+
+    <div class="d">
+        <img src="./images/h.jpg">
+    </div>
+</body>
+<script>
+    window.onscroll = () => {
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        let clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+        let scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+
+
+        if(scrollHeight > clientHeight && scrollTop + clientHeight === scrollHeight) {
+        console.log('pk')
+        }
+    }
+
+</script>
+</html>
